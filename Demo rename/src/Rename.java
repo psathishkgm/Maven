@@ -15,7 +15,7 @@ public class Rename {
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.MILLISECONDS);
-		driver.get("https://www.google.com");
+		driver.get("https://www.google.com/");
 		Thread.sleep(5000);
 		System.out.println("Successfully launced browser");
 	}
