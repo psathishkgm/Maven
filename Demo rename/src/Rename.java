@@ -23,12 +23,9 @@ public class Rename {
 	@Test
 	public void Test4() throws InterruptedException
 	{
-		driver.findElement(By.xpath("//*[text()='Log On']")).click();
+		driver.findElement(By.id("lst-ib")).sendKeys("Dhoni");
 		Thread.sleep(6000);
-		driver.findElement(By.xpath("//input[@id='j_username']")).sendKeys("abcdefgh");
-		Thread.sleep(6000);
-		driver.findElement(By.xpath("//input[@id='j_username']")).clear();
-        System.out.println("Cleared");
+		
 	}
 	@AfterTest
 	public void teardown()
